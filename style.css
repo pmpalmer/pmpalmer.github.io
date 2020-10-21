@@ -53,3 +53,17 @@ h1 {
     80% { color: #F0CA28; }
     100% { color: #EB4962; }
 }
+
+body {
+    display: flex;
+    align-items: stretch;
+}
+
+
+.container {
+    margin: auto;
+    /*background: blue;*/
+    max-width: 1000px;
+    width: 100%;
+    min-height: 100vh;
+}
