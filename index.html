@@ -3,29 +3,39 @@
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
 	<div class="container">
+		<nav></nav>
 		<header>
-			<h1>Paul Palmer</h1>
+			<h1>Hello, I'm Paul</h1>
 		</header>
 		<main>
-			<section id="content">
-				<h2>content</h2>
+			<section id="content" aria-hidden="false">
+				<p>I am a self-taught front end developer based in Raleigh North Carolina.</p>
+				<button class="button button-open">contact me</button>
 			</section>
-			<section id="contact">
-				<h2>contact</h2>
-				<form name="contact" netlify>
-					<label>
-					    Your email:
-				    	<input type="text" name="email">
-					</label>
-				  	<label>
-					    Your message:
-			    		<textarea name="message"></textarea>
-				  	</label>
-				  	<button type="submit">Send</button>
-				</form>
+			<section id="contact" class="modal" aria-hidden="true" >
+				<div class="form-container">
+					<button class="button button-close">close X</button>
+					<h1>Lets get in touch</h1>
+					<form name="contact" netlify action="/thank-you.html">
+						<label for="name">
+							Your name:
+							<input type="text" name="name" id="name" autocomplete="name">
+						</label>
+						<label for="email">
+						    Your email:
+					    	<input type="text" name="email" id="email" autocomplete="email">
+						</label>
+					  	<label for="message">
+						    Your message:
+				    		<textarea name="message" id="message"></textarea>
+					  	</label>
+					  	<button type="submit" class="button button-send">Send</button>
+					</form>
+				</div>
 			</section>
 		</main>
 		<footer></footer>
