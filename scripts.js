@@ -1,3 +1,4 @@
+// Modal form toggle functionality
 window.onload = function() {
 	var buttons = Array.from(document.getElementsByClassName('button'));
 	var content = document.getElementById('content');

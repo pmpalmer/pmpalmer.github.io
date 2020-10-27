@@ -26,6 +26,7 @@ a {
     text-decoration: none;
 }
 
+
 h1 {
     font-family: 'robotoslab';
 }
@@ -47,6 +48,12 @@ input {
     padding: 10px;
     font-size: 20px;
     font-family: 'robotomono';
+    transition: all 200ms ease-in-out;    
+}
+
+.button:hover, button:hover a {
+    background-color: #000;
+    color: #8bf0ba;
 
 }
 
